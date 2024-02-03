@@ -1,5 +1,7 @@
 package org.example;
 
+import static org.apache.commons.lang3.text.WordUtils.capitalize;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -17,7 +19,11 @@ public class Main {
         }
         //split
 
+        String[] word = phrase.split(" ");
         //capitalize
+        for (int i = 0; i < word.length; i++) {
+            word[i] = capitalize(word[i]);
+        }
         //sentence
 
         return null;
