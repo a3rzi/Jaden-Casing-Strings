@@ -31,10 +31,16 @@ public class FunctionTest {
     }
 
     @Test
-    void capitalizeMethode() {
+    void capitalizeMethod() {
         String myName = "artem";
         System.out.println("myName = " + myName);
         System.out.println("capitalize(myName) = " + capitalize(myName) + "\n");
     }
 
+    @Test
+    void joinMethod() {
+        String[] word = {"my", "name","is", "amir"};
+        String result = String.join(" ", word);
+        System.out.println(result);
+    }
 }

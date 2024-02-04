@@ -10,6 +10,7 @@ public class Main {
 
         //when
         String result = toJadenCase(phrase);
+        System.out.println(result);
     }
 
     private static String toJadenCase(String phrase) {
@@ -26,6 +27,6 @@ public class Main {
         }
         //sentence
 
-        return null;
+        return String.join(" ", word);
     }
 }
